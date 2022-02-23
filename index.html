@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: white;
+    }
+
+    .header h1 {
+      font-size: 50px;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 25%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 75%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <nav class="topnav" id="navbar">
+            <header>
+              How to ride a Bicycle
+            </header>
+
+              <a href="#Sit_on_Bicycle" class="nav-link">
+                Sit On Bicycle
+              </a>
+              <a href="#Lift_Kickstand" class="nav-link">
+                Lift kickstand
+              </a>
+              <a href="#Straighten_handlebars" class="nav-link">
+                Straighten handlebars
+              </a>
+              <a href="#Place_Foot_On_Pedal" class="nav-link">
+                Place foot on pedal
+              </a>
+              <a href="#Pedal_With_Other_Foot" class="nav-link">
+                Pedal with other foot
+            </a>
+          </nav>
+        </div>
+      </div>
+    <div class="rightcolumn">
+      <div class="header">
+        <h1>How to Ride A Bike </h1>
+
+      </div>
+      <main id="main-doc">
+        <div class="card">
+          <section class="main-section" id="Sit_on_Bicycle">
+            <header>Sit On Bicycle</header>
+            <code>First do a safety check</code>
+            <ol>
+              <li>Are you wearing a helmet</li>
+              <li>Are you dressed appropriatly "Pro Kit" </li>
+              <li>Are your socks the correct length</li>
+              <li>Are you tires inflated</li>
+              <li>Is your bike chain clean</li>
+            </ol>
+            <p>becoming comfortable is your first step</p>
+            <p></p>
+            </section>
+        </div>
+        <div class="card">
+          <section class="main-section" id="Lift_Kickstand">
+            <header>Lift kickstand</header>
+            <code></code>
+            <p>This is a crucial step</p>
+            <p></p>
+            </section>
+          </div>
+        <div class="card">
+          <section class="main-section" id="Straighten_handlebars">
+            <header>Straighten handlebars</header>
+            <code></code>
+            <p>make sure to look where you are going your bicycle will follow your  eyes</p>
+            <p></p>
+            </section>
+          </div>
+        <div class="card">
+          <section class="main-section" id="Place_Foot_On_Pedal">
+            <header>Place foot on pedal</header>
+            <code></code>
+            <p>centering the bike beneith you is an important step</p>
+            <p></p>
+            </section>
+          </div>
+        <div class="card">
+          <section class="main-section" id="Pedal_With_Other_Foot">
+            <header>Pedal with other foot</header>
+            <code></code>
+            <p>creating momentum and following through will get you where you need to go </p>
+            <p></p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Be Safe and Enjoy Cycling</h2>
+  </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
